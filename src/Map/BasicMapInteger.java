@@ -1,17 +1,18 @@
 package Map;
 
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by synergisticit on 2/25/2016.
+ *
+ * HashMAp and HashSet doest guarantee the ordre of retieval
+ * TreeSet and TreeMap guarantees order (for map, the order is DNSO of keys)
  */
 public class BasicMapInteger {
     public static void main(String[] args) {
         Map<Integer,Integer> map = new HashMap<Integer, Integer>();
 
+        map.put(1008,1234567891);
         map.put(1001,4);
         map.put(1002,2);
         map.put(1003,6);
@@ -19,14 +20,34 @@ public class BasicMapInteger {
         map.put(1005,10);
         map.put(1006,11);
         map.put(1007,12);
-        map.put(1008,1234567891);
+
 
         //printMapUsingSet(map);
 
         //printMapUsingEntrySet(map);
+//        removeOddNumber(map);
 
         printMapUsingEntrySetForEach(map);
 
+
+
+    }
+
+    private static void removeOddNumber(Map<Integer, Integer> map) {
+        //KeySet is a method in map which RETURNSD A SET OF KEYS
+        Set<Integer> key = map.keySet();
+
+        Iterator itr = key.iterator();
+        while(itr.hasNext()) {
+            Integer tempKey = (Integer)itr.next();
+            if(map.get(tempKey)%2 != 0){
+                // Concurrent Modification Exception
+                //map.remove(tempKey);
+
+                //ALWAYS REMOVE USING ITERATOR
+                itr.remove();
+            }
+        }
     }
 
     private static void printMapUsingEntrySetForEach(Map<Integer, Integer> map) {
