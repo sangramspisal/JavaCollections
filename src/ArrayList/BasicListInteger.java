@@ -30,14 +30,17 @@ public class BasicListInteger {
         removeOddNumber(list);
 
         //How to Iterate
-        printSet(list);
+        printList(list);
+
+        //NOTE: FOR EACH NOT APPLICABLE FOR ITERATOR
 
         //How to Remove
-
 
         //printSet(set);
 
     }
+
+
 
     private static void removeOddNumber(List<Integer> list) {
         Iterator<Integer> itr = list.iterator();
@@ -59,7 +62,7 @@ public class BasicListInteger {
      2. next()
      3. remove()
      */
-    private static void printSet(List<Integer> list) {
+    private static void printList(List<Integer> list) {
         //Printing with Iterator
         Iterator itr = list.iterator();
         //From this point on, DO NOT USE set.get or set.remove!!
@@ -71,7 +74,5 @@ public class BasicListInteger {
         System.out.println();
 
     }
-
-
 
 }

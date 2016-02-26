@@ -25,7 +25,7 @@ public class BasicMapInteger {
         //printMapUsingSet(map);
 
         //printMapUsingEntrySet(map);
-//        removeOddNumber(map);
+        removeOddNumber(map);
 
         printMapUsingEntrySetForEach(map);
 
@@ -52,8 +52,8 @@ public class BasicMapInteger {
 
     private static void printMapUsingEntrySetForEach(Map<Integer, Integer> map) {
         //loop a Map
-        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            System.out.println("Key : " + entry.getKey() + " Value : " + entry.getValue());
+        for (Map.Entry<Integer, Integer> itr : map.entrySet()) {
+            System.out.println("Key : " + itr.getKey() + " Value : " + itr.getValue());
         }
     }
 
@@ -74,8 +74,6 @@ public class BasicMapInteger {
             //Extracting the key and value out of Entry
             System.out.println("Key is : "+curr.getKey()+" Value is "+curr.getValue());
         }
-
-
     }
 
     /**
