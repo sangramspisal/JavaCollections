@@ -1,6 +1,4 @@
-package LearnComparator;
-
-import java.util.Comparator;
+package ConceptComparator.comparable;
 
 /**
  * Created by synergisticit on 2/25/2016.
@@ -29,24 +27,6 @@ public class Student {
     }
 
 
-    /**
-     * DNSO
-     *
-     * @param
-     * @return
-     */
-//    @Override
-//    public int compareTo(Object o) {
-//        Student curr =(Student)o;
-//
-//        if (this.id > curr.id)
-//            return 1;
-//        else if(this.id < curr.id)
-//            return -1;
-//        else
-//            return compareFirstNames(o);
-//    }
-
     // Lexicographical Order
     private int compareFirstNames(Object o) {
         Student curr =(Student)o;
@@ -66,24 +46,5 @@ public class Student {
 
 
     }
-
-    /**
-     * WILL NOT WORK
-     * @param o1
-     * @param o2
-     * @return
-     */
-//    @Override
-//    public int compare(Object o1, Object o2) {
-//        Student student1 = (Student) o1;
-//        Student student2 = (Student) o2;
-//
-//        if (student1.id > student2.id)
-//            return 1;
-//        else if (student1.id < student2.id)
-//            return -1;
-//        else
-//            return 0;
-//    }
 }
 

@@ -1,4 +1,4 @@
-package LearnComparator;
+package ConceptComparator.comparable;
 
 import java.util.*;
 
@@ -15,7 +15,7 @@ import java.util.*;
  * Conparateon can be used when wer call java Utility Calss
  * Collections.sort(List<Integer>, Comparator<...>)
  */
-public class ComparatorTest {
+public class ComparableTest {
     public static void main(String[] args) {
         Student s1 = new Student(4,"Lucy","Taylor","Jenkov Taylor");
         Student s2 = new Student(2,"Tracy","Rajaei","Bill Taylor");
@@ -24,6 +24,7 @@ public class ComparatorTest {
 
         //HashSet does not need COMPARATOR, but TREE DOES
         Set<Student> studentSet = new TreeSet<Student>();
+
 
         studentSet.add(s1);
         studentSet.add(s2);
