@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10df797e-0835-4b12-a84c-e87c331e860b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ArrayList/BasicListInteger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ArrayList/BasicListString.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Collection.iws" />
@@ -677,7 +675,13 @@
       <option name="project" value="LOCAL" />
       <updated>1456451924911</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit from IntelliJ. Map is finished">
+      <created>1456453344258</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1456453344258</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
