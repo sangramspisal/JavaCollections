@@ -7,8 +7,6 @@ import java.util.TreeSet;
 
 /**
  * Created by synergisticit on 2/26/2016.
- *
- * Adding into TreeSet using Comparator.
  */
 public class ComparatorTest {
     public static void main(String[] args) {
